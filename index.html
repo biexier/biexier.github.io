@@ -1,0 +1,1258 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>91直播 — 游戏_才艺_户外_全天候热门直播平台</title> 
+	<meta name="description" content="91直播汇聚游戏竞技、才艺表演、户外探险等全品类直播内容。实时推荐热门主播与精彩直播间，一键关注开播提醒，轻松发现每一刻的精彩直播。"> 
+	<meta name="keywords" content="91直播,91直播平台,游戏直播,才艺直播,户外直播,热门主播,在线直播,直播推荐,直播观看">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" rel="nofollow" src="/static/js/head.js"></script>
+    <script type="text/javascript" rel="nofollow" src="/static/js/statistics.js"></script>
+    <style>
+        :root {
+            --bg: #0d0f17;
+            --bg-card: #171a26;
+            --bg-soft: #1f2331;
+            --primary: #ff3c5e;
+            --secondary: #7b5cff;
+            --accent: #00e0c6;
+            --text: #e8eaf0;
+            --text-2: #a2a8b8;
+            --text-3: #6f7689;
+            --radius: 16px;
+            --shadow: 0 8px 26px rgba(0, 0, 0, .35);
+            --border: 1px solid rgba(255, 255, 255, .06);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        ul,
+        ol {
+            list-style: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 顶部导航 */
+        .site-header {
+            background: rgba(13, 15, 23, .85);
+            backdrop-filter: blur(14px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
+        .brand-badge {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            box-shadow: 0 0 18px rgba(255, 60, 94, .4);
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            font-size: 14px;
+            color: var(--text-2);
+        }
+        .nav-links a:hover {
+            color: var(--text);
+        }
+        .nav-search {
+            background: var(--bg-soft);
+            border-radius: 20px;
+            padding: 6px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+        .nav-search input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text);
+            width: 140px;
+            font-size: 13px;
+        }
+        .nav-search input::placeholder {
+            color: var(--text-3);
+        }
+        .nav-search i {
+            font-style: normal;
+            font-size: 14px;
+            color: var(--text-3);
+        }
+        @media (max-width:768px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-search {
+                display: none;
+            }
+        }
+        /* 首屏 Banner */
+        .hero-banner {
+            background: radial-gradient(ellipse at 70% 20%, rgba(123, 92, 255, .25), transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(255, 60, 94, .15), transparent 55%);
+            padding: 72px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-banner:before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 224, 198, .08), transparent 70%);
+            top: -150px;
+            left: -100px;
+            pointer-events: none;
+        }
+        .hero-banner .container {
+            position: relative;
+        }
+        .hero-badge {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 2px;
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .12);
+            padding: 4px 18px;
+            border-radius: 30px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .hero-banner h1 {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 1.2;
+            background: linear-gradient(90deg, #fff, #d4d8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+        .hero-sub {
+            color: var(--text-2);
+            font-size: 16px;
+            max-width: 640px;
+            margin: 0 auto 32px;
+            line-height: 1.8;
+        }
+        .hero-search {
+            max-width: 560px;
+            margin: 0 auto 32px;
+            display: flex;
+            background: rgba(255, 255, 255, .07);
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 50px;
+            padding: 6px 6px 6px 20px;
+        }
+        .hero-search input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 15px;
+        }
+        .hero-search input::placeholder {
+            color: var(--text-3);
+        }
+        .hero-search button {
+            background: linear-gradient(135deg, var(--primary), #ff6a5c);
+            border: none;
+            border-radius: 40px;
+            padding: 10px 26px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+        .btn-primary,
+        .btn-ghost {
+            padding: 11px 30px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all .25s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(255, 60, 94, .3);
+        }
+        .btn-ghost {
+            border: 1px solid rgba(255, 255, 255, .2);
+            color: var(--text);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px rgba(255, 60, 94, .4);
+        }
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, .05);
+            transform: translateY(-2px);
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .hero-tags a {
+            font-size: 13px;
+            color: var(--text-2);
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .08);
+            padding: 5px 16px;
+            border-radius: 20px;
+            transition: all .2s;
+        }
+        .hero-tags a:hover {
+            color: #fff;
+            border-color: rgba(255, 255, 255, .2);
+            background: rgba(255, 255, 255, .08);
+        }
+        @media (max-width:768px) {
+            .hero-banner {
+                padding: 48px 0 56px;
+            }
+            .hero-banner h1 {
+                font-size: 32px;
+            }
+            .hero-sub {
+                font-size: 14px;
+            }
+            .hero-search {
+                flex-direction: column;
+                background: transparent;
+                border: none;
+                padding: 0;
+            }
+            .hero-search input {
+                background: rgba(255, 255, 255, .07);
+                border: 1px solid rgba(255, 255, 255, .14);
+                border-radius: 40px;
+                padding: 12px 20px;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+            .hero-search button {
+                width: 100%;
+            }
+        }
+        /* 通用 Section */
+        .section {
+            padding: 56px 0;
+        }
+        .section-head {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, .06);
+            padding-bottom: 14px;
+        }
+        .section-head h2 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: .5px;
+            position: relative;
+        }
+        .section-head h2:before {
+            content: "";
+            width: 28px;
+            height: 4px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+        .section-more a {
+            font-size: 13px;
+            color: var(--text-2);
+        }
+        .section-more a:hover {
+            color: var(--text);
+        }
+        /* 分类入口 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .category-card {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: var(--radius);
+            padding: 22px 20px;
+            transition: all .25s;
+        }
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: rgba(255, 255, 255, .12);
+        }
+        .category-card .cate-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .category-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .category-card p {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.5;
+        }
+        @media (max-width:768px) {
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        /* 内容卡片 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .content-card {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all .3s;
+        }
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        .card-cover {
+            height: 120px;
+            background: linear-gradient(135deg, var(--cover-a, #7b5cff), var(--cover-b, #ff3c5e));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, .25);
+            position: relative;
+        }
+        .card-cover .live-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 60, 94, .85);
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .card-cover .hot-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, .4);
+            font-size: 11px;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .card-body {
+            padding: 16px 18px 18px;
+        }
+        .card-body h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-bottom: 10px;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .card-tags span {
+            font-size: 11px;
+            background: rgba(255, 255, 255, .06);
+            padding: 2px 10px;
+            border-radius: 12px;
+            color: var(--text-2);
+        }
+        @media (max-width:768px) {
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+        }
+        @media (max-width:480px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* 更新列表 */
+        .update-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .update-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            transition: background .2s;
+        }
+        .update-item:hover {
+            background: var(--bg-soft);
+        }
+        .update-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            flex-shrink: 0;
+            box-shadow: 0 0 8px rgba(0, 224, 198, .5);
+        }
+        .update-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .update-info .up-title {
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .update-info .up-meta {
+            font-size: 12px;
+            color: var(--text-3);
+        }
+        .update-time {
+            font-size: 12px;
+            color: var(--text-3);
+            flex-shrink: 0;
+        }
+        @media (max-width:768px) {
+            .update-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* 深度解析 */
+        .article-box {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: var(--radius);
+            padding: 36px 40px;
+            margin: 0 auto;
+        }
+        .article-box h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+        .article-box h4 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 24px;
+            color: var(--accent);
+        }
+        .article-box p {
+            margin-bottom: 16px;
+            color: var(--text-2);
+            font-size: 15px;
+            line-height: 1.85;
+        }
+        .article-box strong {
+            color: #fff;
+        }
+        @media (max-width:768px) {
+            .article-box {
+                padding: 24px 20px;
+            }
+        }
+        /* FAQ */
+        .faq-wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: 14px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .faq-q {
+            padding: 18px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background .2s;
+        }
+        .faq-q:hover {
+            background: var(--bg-soft);
+        }
+        .faq-q .arrow {
+            font-style: normal;
+            font-size: 12px;
+            color: var(--text-3);
+            transition: transform .3s;
+        }
+        .faq-item[open] .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-a {
+            padding: 0 24px 20px;
+            color: var(--text-2);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        /* 评论 */
+        .comments-grid {
+            columns: 2;
+            column-gap: 20px;
+        }
+        .comment-item {
+            break-inside: avoid;
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-bottom: 14px;
+        }
+        .comment-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .comment-user {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .comment-user .avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .comment-time {
+            font-size: 12px;
+            color: var(--text-3);
+        }
+        .comment-text {
+            font-size: 14px;
+            color: var(--text-2);
+            line-height: 1.7;
+        }
+        @media (max-width:768px) {
+            .comments-grid {
+                columns: 1;
+            }
+        }
+        /* 资讯 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .news-card {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            transition: all .25s;
+        }
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        .news-card .news-date {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-bottom: 6px;
+        }
+        .news-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        .news-card p {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.6;
+        }
+        @media (max-width:768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* 体验指南 */
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .guide-card {
+            background: var(--bg-card);
+            border: var(--border);
+            border-radius: var(--radius);
+            padding: 24px 20px;
+            text-align: center;
+        }
+        .guide-card .icon {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+        .guide-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .guide-card p {
+            font-size: 13px;
+            color: var(--text-2);
+            line-height: 1.6;
+        }
+        @media (max-width:768px) {
+            .guide-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        /* 页脚 */
+        .footer {
+            border-top: 1px solid rgba(255, 255, 255, .06);
+            padding: 40px 0 30px;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, .2);
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 13px;
+            color: var(--text-2);
+        }
+        .footer-links a:hover {
+            color: var(--text);
+        }
+        .footer-copy {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-3);
+            line-height: 1.8;
+        }
+        .footer-disclaimer {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-3);
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+    </style>
+<script></script></head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="#" class="brand">
+                <span class="brand-badge">91</span>
+                <span>91直播</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">直播分类</a>
+                <a href="#">热门排行</a>
+                <a href="#">最新开播</a>
+                <a href="#">主播推荐</a>
+                <a href="#">观播指南</a>
+            </nav>
+            <div class="nav-search">
+                <i>🔍</i>
+                <input type="text" placeholder="搜索主播 / 直播内容">
+            </div>
+        </div>
+    </header>
+    <!-- 首屏 Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <span class="hero-badge">🔥 LIVE STREAMING</span>
+            <h1>91直播：发现每一个精彩直播现场</h1>
+            <p class="hero-sub">实时聚合游戏竞技、才艺表演、户外探险、音乐演唱等热门直播内容。从人气主播到新锐达人，从热门话题到垂直兴趣圈层，快速找到对味的直播间，随时点开就能看。</p>
+            <div class="hero-search">
+                <input type="text" placeholder="搜直播、搜主播、搜话题…">
+                <button>搜索</button>
+            </div>
+            <div class="hero-actions">
+                <a href="#" class="btn-primary">✨ 进入推荐直播间</a>
+                <a href="#" class="btn-ghost">📺 浏览最新开播</a>
+            </div>
+            <div class="hero-tags">
+                <a href="#">王者荣耀</a>
+                <a href="#">英雄联盟</a>
+                <a href="#">户外徒步</a>
+                <a href="#">才艺PK</a>
+                <a href="#">音乐现场</a>
+                <a href="#">美食探店</a>
+                <a href="#">聊天互动</a>
+                <a href="#">萌宠日常</a>
+            </div>
+        </div>
+    </section>
+    <!-- 分类入口 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>91直播热门分类</h2>
+                <div class="section-more"><a href="#">查看全部分类 →</a></div>
+            </div>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="cate-icon">🎮</div>
+                    <h3>游戏竞技</h3>
+                    <p>MOBA、FPS、主机游戏实时对战，高手操作一网打尽。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">💃</div>
+                    <h3>才艺表演</h3>
+                    <p>舞蹈、乐器、脱口秀，各种才艺展示轮番上演。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">🛒</div>
+                    <h3>电商带货</h3>
+                    <p>精选好物实时讲解，边看直播边发现值得买的好东西。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">⛰️</div>
+                    <h3>户外探险</h3>
+                    <p>徒步、露营、自驾出行，跟着主播一起看世界。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">🎤</div>
+                    <h3>音乐演唱</h3>
+                    <p>连麦K歌、原创弹唱、演唱会现场直击。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">🍜</div>
+                    <h3>美食生活</h3>
+                    <p>深夜食堂、探店测评、家常菜教学，越看越饿。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">📚</div>
+                    <h3>知识分享</h3>
+                    <p>历史科普、财经解读、技能教学，边看边学。</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cate-icon">🌙</div>
+                    <h3>深夜电台</h3>
+                    <p>情感树洞、睡前陪伴、轻声细语聊聊天。</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 热门内容推荐 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>正在热播的直播间</h2>
+                <div class="section-more"><a href="#">查看更多热门 →</a></div>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#f7b955;--cover-b:#e8590c">
+                        <span>🔥</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">12.8w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>阿伟的峡谷冲分</h3>
+                        <div class="card-meta">王者荣耀 · 星耀段位冲王者</div>
+                        <p class="card-desc">国服打野阿伟在线冲分，节奏带飞全场，弹幕互动教学打野思路，上分细节拉满。</p>
+                        <div class="card-tags"><span>高分段</span><span>打野教学</span><span>弹幕互动</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#7b5cff;--cover-b:#ff3c5e">
+                        <span>🎤</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">8.2w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>小甜嗓翻唱电台</h3>
+                        <div class="card-meta">音乐演唱 · 治愈系声线</div>
+                        <p class="card-desc">每晚九点准时开唱，从经典老歌到最新热单全都有，粉丝点歌环节超级宠粉。</p>
+                        <div class="card-tags"><span>翻唱</span><span>点歌互动</span><span>治愈声线</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#00e0c6;--cover-b:#006d6a">
+                        <span>🏔️</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">5.6w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>老白川西徒步日记</h3>
+                        <div class="card-meta">户外探险 · 川西秘境</div>
+                        <p class="card-desc">徒步穿越川西小众路线，雪山草甸风景绝美，实时分享露营装备和路线攻略。</p>
+                        <div class="card-tags"><span>徒步</span><span>川西</span><span>露营攻略</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#ff9f1a;--cover-b:#f25f29">
+                        <span>🍜</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">3.9w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>大嘴吃遍街头</h3>
+                        <div class="card-meta">美食探店 · 街头小吃</div>
+                        <p class="card-desc">穿梭城市大街小巷，寻找地道街头美食，人均十几块吃到扶墙走。</p>
+                        <div class="card-tags"><span>街头美食</span><span>探店</span><span>性价比</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#6a5cff;--cover-b:#3b2da8">
+                        <span>🛒</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">6.3w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>严选好物研究所</h3>
+                        <div class="card-meta">电商带货 · 品质严选</div>
+                        <p class="card-desc">每件商品都实测讲解，不盲目推品，优缺点直说，适合想买又怕踩坑的朋友。</p>
+                        <div class="card-tags"><span>好物测评</span><span>避坑指南</span><span>限时优惠</span></div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-cover" style="--cover-a:#ff6b6b;--cover-b:#c0392b">
+                        <span>💬</span>
+                        <span class="live-badge">LIVE</span>
+                        <span class="hot-badge">2.1w人气</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>小鹿的深夜树洞</h3>
+                        <div class="card-meta">聊天互动 · 情感陪伴</div>
+                        <p class="card-desc">聊情感、聊生活、聊职场困惑，温暖声线陪伴每个失眠夜晚。</p>
+                        <div class="card-tags"><span>情感树洞</span><span>连麦倾诉</span><span>深夜陪伴</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 最新更新/开播动态 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>今日开播与更新动态</h2>
+                <div class="section-more"><a href="#">全部动态 →</a></div>
+            </div>
+            <div class="update-list">
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「阿伟的峡谷冲分」直播中：冲击王者20星</div>
+                        <div class="up-meta">王者荣耀 · 高分段排位</div>
+                    </div>
+                    <span class="update-time">刚刚</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「小甜嗓翻唱电台」已开播 · 今日主题：周杰伦专场</div>
+                        <div class="up-meta">音乐演唱 · 经典翻唱</div>
+                    </div>
+                    <span class="update-time">10分钟前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「老白川西徒步日记」Day3：翻越垭口</div>
+                        <div class="up-meta">户外探险 · 川西秘境</div>
+                    </div>
+                    <span class="update-time">28分钟前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「严选好物研究所」今晚8点直播：秋季护肤专场</div>
+                        <div class="up-meta">电商带货 · 美妆护肤</div>
+                    </div>
+                    <span class="update-time">1小时前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「小鹿的深夜树洞」今晚11点开播，欢迎连麦</div>
+                        <div class="up-meta">聊天互动 · 情感陪伴</div>
+                    </div>
+                    <span class="update-time">2小时前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「大嘴吃遍街头」新系列：老城区巷子里的隐藏美味</div>
+                        <div class="up-meta">美食探店 · 街头小吃</div>
+                    </div>
+                    <span class="update-time">3小时前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「闪电钢琴师」首次公开即兴创作全流程</div>
+                        <div class="up-meta">才艺表演 · 钢琴弹奏</div>
+                    </div>
+                    <span class="update-time">4小时前</span>
+                </a>
+                <a href="#" class="update-item">
+                    <span class="update-dot"></span>
+                    <div class="update-info">
+                        <div class="up-title">「历史趣谈室」今日话题：明朝那些有趣的事</div>
+                        <div class="up-meta">知识分享 · 历史科普</div>
+                    </div>
+                    <span class="update-time">5小时前</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 深度解析正文 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>关于91直播：内容生态与观看体验深度解析</h2>
+            </div>
+            <div class="article-box">
+                <h3>为什么91直播值得关注？</h3>
+                <p>提到<strong>91直播</strong>，很多人第一反应是「又一个聚合直播平台」。但当你真正深入了解后会发现，它不只是把直播间堆在一起那么简单。对用户来说，关键在于能否用最少的时间找到最对味的直播内容，以及是否有持续更新的内容生态支撑。</p>
+                <p>从内容供给来看，<strong>91直播</strong>覆盖了游戏、才艺、户外、带货、知识分享等多个品类，并且每个品类下都有稳定的主播在持续产出。这意味用户进入页面后不是面对一片空白，而是有大量可以选择的内容。尤其对于直播重度用户来说，平台内容丰富度直接决定了留存时间。</p>
+                <h4>直播内容的核心竞争力：真实感与互动性</h4>
+                <p>直播相比视频最大的优势在于实时互动。看<strong>91直播</strong>的直播间时，弹幕、连麦、打赏等互动形式让观众从「围观者」变成「参与者」。比如游戏区的主播会一边操作一边回应弹幕提问，户外区的主播会实时回答观众关于路线和装备的问题。这种交互体验是录播内容无法替代的。</p>
+                <h4>不同人群如何找到适合自己的直播间？</h4>
+                <p>如果你是<strong>游戏爱好者</strong>，可以重点关注游戏竞技区的头部主播，他们通常有固定的开播时间，而且技术含量高。如果你喜欢<strong>轻松陪伴型内容</strong>，音乐区和聊天区的直播间更合适，这类直播间的氛围普遍比较放松。而想淘好货的朋友则可以关注带货区的主播，提前看预告可以避免错过优惠。</p>
+                <p>另外，很多人搜索<strong>91直播</strong>其实是想了解「有哪些值得看的主播」或「某个直播间什么时候开播」。基于这种需求，我们整理了当下热门的直播间名单，并持续跟踪开播动态，方便大家快速找到感兴趣的直播内容。</p>
+                <h4>内容节奏与消费体验</h4>
+                <p>直播消费和短视频或长视频不同，它更强调时间的「沉浸感」。好的直播间通常有明确的内容规划：比如游戏区主打的段位冲刺、音乐区的主题歌单、户外区的路线连载。这些规划让观众愿意持续追更，甚至形成固定的观看习惯。从体验角度看，<strong>91直播</strong>的页面布局和分类筛选相对清晰，移动端也能比较方便地找到入口，对经常用碎片时间看直播的人是友好的。</p>
+                <p>未来直播内容的趋势会越来越垂直，主播需要更精准地找到自己的受众，而观众也需要更高效的发现机制。91直播这类平台的价值，正在于连接这两端。</p>
+            </div>
+        </div>
+    </section>
+    <!-- 体验指南 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>91直播观看体验指南</h2>
+            </div>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="icon">🗂️</div>
+                    <h3>分类清晰</h3>
+                    <p>8大主流分类一键切换，从游戏到户外快速定位。</p>
+                </div>
+                <div class="guide-card">
+                    <div class="icon">🔍</div>
+                    <h3>搜索直达</h3>
+                    <p>支持主播名、直播内容、话题标签多维度搜索。</p>
+                </div>
+                <div class="guide-card">
+                    <div class="icon">📱</div>
+                    <h3>移动友好</h3>
+                    <p>手机浏览器直接打开即可观看，无需额外下载。</p>
+                </div>
+                <div class="guide-card">
+                    <div class="icon">🕒</div>
+                    <h3>追播提醒</h3>
+                    <p>关注后开播自动提醒，不错过任何一场精彩直播。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>关于91直播的常见问题</h2>
+            </div>
+            <div class="faq-wrap">
+                <details class="faq-item">
+                    <summary class="faq-q">91直播是什么类型的平台？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">91直播是一个聚合型的在线直播内容推荐平台，涵盖游戏竞技、才艺表演、户外探险、电商带货、音乐演唱、知识分享等主流直播品类。用户可以通过分类、搜索和推荐快速发现感兴趣的直播间，实现一站式的直播观看体验。</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">如何找到自己喜欢的主播？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">推荐从首页的热门直播列表入手，这些直播间通常人气较高、内容质量较稳定。如果你有特定的内容偏好，可以直接使用搜索功能查找相关主播，或者通过分类入口逐层筛选。关注后系统会记录你的观看偏好，推荐会越来越精准。</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">热门直播间一般什么时间段开播？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">不同品类的开播时间差异较大。游戏区和音乐区的头部主播通常集中在晚间黄金时段（19点-23点）开播，户外主播受天气影响较多，通常白天开播。带货直播间则常有固定的晚间场次。你可以通过直播间的预告功能了解具体开播时间。</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">在手机上看91直播会消耗多少流量？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">直播的流量消耗主要取决于画质和观看时长。流畅画质下大约每小时消耗200MB左右，高清画质约为每小时500MB。建议在WiFi环境下观看，或者根据流量套餐情况选择合适的画质。部分页面还提供省流模式选项。</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">能否看直播回放？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">大部分人气主播会保留直播回放，通常可以在主播的个人主页找到。回放内容一般保留7-30天不等，过期后不再提供。建议对感兴趣的主播及时关注，方便随时查看往期精彩内容。</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-q">怎么参与直播间互动？<span class="arrow">▼</span></summary>
+                    <div class="faq-a">在直播间内可以通过发送弹幕参与讨论，部分直播间支持连麦功能，申请连麦后可以与主播直接对话。互动规则因直播间而异，建议先观察一段时间，熟悉主播的互动习惯后再积极参与。</div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- 用户评论 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>观众都在聊什么</h2>
+                <div class="section-more"><a href="#">查看更多评论 →</a></div>
+            </div>
+            <div class="comments-grid">
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">N</span>夜风轻语</span>
+                        <span class="comment-time">2026-08-06</span>
+                    </div>
+                    <p class="comment-text">在91直播发现了一个宝藏户外主播，每天跟着云徒步的感觉太解压了。主播对路线和装备讲解很详细，比看录播有代入感多了。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">S</span>苏打气泡水</span>
+                        <span class="comment-time">2026-08-06</span>
+                    </div>
+                    <p class="comment-text">游戏区的质量真的可以，阿伟的打野思路讲得很清楚，看了两天学到了好多。弹幕互动氛围也好，不像有些平台全是广告。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">M</span>摸鱼艺术家</span>
+                        <span class="comment-time">2026-08-05</span>
+                    </div>
+                    <p class="comment-text">深夜电台是我的精神避难所，小鹿的声音太治愈了。昨晚连麦聊了职场焦虑，感觉被理解到了。希望这个直播间一直做下去。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">K</span>KK不吃香菜</span>
+                        <span class="comment-time">2026-08-05</span>
+                    </div>
+                    <p class="comment-text">带货区的严选好物做得挺实在，主播会直接说产品的缺点，这点在直播带货里挺难得的。已经种草了好几个东西。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">L</span>柠檬不萌</span>
+                        <span class="comment-time">2026-08-04</span>
+                    </div>
+                    <p class="comment-text">小甜嗓的翻唱电台也太好听了吧！昨晚的周杰伦专场直接听哭了，那种青春回忆一下子全涌上来。已经安利给身边所有朋友。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">Z</span>周末不加班</span>
+                        <span class="comment-time">2026-08-04</span>
+                    </div>
+                    <p class="comment-text">分类入口很清晰，想看点啥基本两三步就能找到。不过感觉娱乐八卦类的内容还比较少，希望后续丰富一下。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">C</span>橙子味</span>
+                        <span class="comment-time">2026-08-03</span>
+                    </div>
+                    <p class="comment-text">老白的川西徒步真的绝，那些雪山画面比电影还美。看着主播一步一步往前走，突然觉得生活里那些难事也没那么难了。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">X</span>小笼包</span>
+                        <span class="comment-time">2026-08-03</span>
+                    </div>
+                    <p class="comment-text">大嘴吃遍街头每次看都觉得好下饭，那些隐藏在小巷子里的店真的只有本地人才知道。希望多去几个城市拍。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">H</span>海盐气泡</span>
+                        <span class="comment-time">2026-08-02</span>
+                    </div>
+                    <p class="comment-text">历史趣谈室是我最近的知识快乐源泉，主播讲历史像说相声一样生动。昨天讲明朝那些事笑到肚子疼。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">W</span>晚风眠眠</span>
+                        <span class="comment-time">2026-08-02</span>
+                    </div>
+                    <p class="comment-text">作为一个常熬夜的设计师，深夜电台真的陪伴了我太多赶稿夜晚。听着陌生人的故事，感觉这个城市没有那么孤单。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">Q</span>清茶半盏</span>
+                        <span class="comment-time">2026-08-01</span>
+                    </div>
+                    <p class="comment-text">整体体验不错，但希望搜索能增加筛选功能，比如按在线人数排序、按标签筛选，这样找直播间更方便。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">R</span>让一让</span>
+                        <span class="comment-time">2026-08-01</span>
+                    </div>
+                    <p class="comment-text">从朋友那听到91直播，试了一下发现游戏区的王者主播挺有实力的，操作细节拉满，比我之前看的其他平台主播强太多。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">B</span>不吃鱼</span>
+                        <span class="comment-time">2026-07-31</span>
+                    </div>
+                    <p class="comment-text">带货区虽然好，但希望主播能缩短每个商品的讲解时间，有些东西听三遍真有点疲劳。不过产品质量确实不错。</p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-head">
+                        <span class="comment-user"><span class="avatar">T</span>甜崽小羊</span>
+                        <span class="comment-time">2026-07-31</span>
+                    </div>
+                    <p class="comment-text">才艺区的闪电钢琴师好有才，即兴创作那段直接给我看愣了。这种真正的才艺在直播里太难得了。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 相关资讯 -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="section-head">
+                <h2>直播行业相关资讯</h2>
+                <div class="section-more"><a href="#">更多资讯 →</a></div>
+            </div>
+            <div class="news-grid">
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-08</div>
+                    <h3>91直播启动夏日主播扶持计划 新人开播可享流量扶持</h3>
+                    <p>平台宣布面向新人主播推出专属流量扶持计划，覆盖游戏、才艺、户外等多个品类。</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-07</div>
+                    <h3>户外直播热度持续攀升 徒步、露营类内容观看量翻倍</h3>
+                    <p>随着户外内容消费需求增长，徒步、露营、自驾等主题直播成为平台新的流量增长点。</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-06</div>
+                    <h3>直播互动新玩法上线 连麦PK受年轻观众追捧</h3>
+                    <p>平台新版本更新后，连麦PK与弹幕互动玩法进一步升级，极大提升了直播间的活跃度。</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-05</div>
+                    <h3>音乐直播内容升级 多档主题翻唱节目获好评</h3>
+                    <p>音乐区联合多位人气主播推出主题翻唱系列节目，覆盖经典怀旧、流行热歌等不同风格。</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-04</div>
+                    <h3>电商带货直播规范发布 强调真实评测与售后保障</h3>
+                    <p>平台发布带货直播行为规范，要求主播对商品进行真实评测，并强化消费者售后权益保障。</p>
+                </a>
+                <a href="#" class="news-card">
+                    <div class="news-date">2026-08-03</div>
+                    <h3>知识分享类直播用户规模增长 历史科普最受欢迎</h3>
+                    <p>数据显示知识类直播观看时长同比增长明显，历史科普、财经解读、技能教学成为热门内容。</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">直播分类</a>
+                <a href="#">热门排行</a>
+                <a href="#">主播入驻</a>
+                <a href="#">帮助中心</a>
+                <a href="#">友情链接</a>
+            </div>
+            <p class="footer-copy">© 2026 91直播 — 游戏_才艺_户外_全天候热门直播平台</p>
+            <p class="footer-disclaimer">免责声明：本站内容仅作信息整理与交流参考，不声称拥有任何版权资源，直播内容请以正版渠道为准。页面展示的开播时间、人气数据等为模拟信息，实际情况请以平台实时为准。</p>
+        </div>
+    </footer>
+</body>
+</html>
